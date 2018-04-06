@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "types": [
+      "vss-web-extension-sdk"
+    ],
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "module": "amd",
+    "moduleResolution": "node",
+    "target": "es5",
+    "outDir": "lib/",
+    "rootDir": "src/",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

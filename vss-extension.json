@@ -1,0 +1,65 @@
+{
+    "manifestVersion": 1,
+    "id": "vsts-extensions-myExtensions",
+    "version": "1.0.13",
+    "name": "Sample Dashboard Widgets",
+    "description": "Samples containing different widgets extending dashboards.",
+    "publisher": "tautvydaseidiets",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "img/logo.png"
+    },
+    "demands": [
+        "contribution/ms.vss-dashboards-web.widget-sdk-version-2"
+    ],
+    "contributions": [
+        {
+            "id": "PullCounterWidget",
+            "type": "ms.vss-dashboards-web.widget",
+            "targets": [
+                "ms.vss-dashboards-web.widget-catalog"
+            ],
+            "properties": {
+                "name": "Pull Counter",
+                "description": "Pull request counter widget.",
+                "catalogIconUrl": "img/helloWorld.png",
+                "previewImageUrl": "img/helloWorld_330x160.png",
+                "uri": "index.html",
+                "supportedSizes": [
+                    {
+                        "rowSpan": 2,
+                        "columnSpan": 2
+                    }
+                ],
+                "supportedScopes": [
+                    "project_team"
+                ]
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "index.html",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib/VSS.SDK.min.js",
+            "addressable": true
+        },
+        {
+            "path": "img",
+            "addressable": true
+        },
+        {
+            "path": "lib",
+            "addressable": true
+        }
+    ],
+    "scopes": [
+        "vso.code_manage"
+    ]
+}

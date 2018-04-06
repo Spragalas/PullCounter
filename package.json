@@ -1,0 +1,15 @@
+{
+  "name": "pull_counter",
+  "version": "1.0.0",
+  "description": "Pull request counter widget for vsts",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "tautvydas.eidietis@bentley.com",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.8.1",
+    "vss-web-extension-sdk": "^5.131.0"
+  }
+}
